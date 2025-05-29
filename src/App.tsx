@@ -18,8 +18,6 @@ export const App = () => {
     });
   };
 
-  console.log(movies);
-
   return (
     <div className="page">
       <div className="page-content">
