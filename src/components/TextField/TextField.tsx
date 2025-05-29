@@ -22,10 +22,10 @@ export const TextField: React.FC<Props> = ({
   required = false,
   onChange = () => {},
 }) => {
-  // generate id  after load component
+  // id generator
   const [id] = useState(() => `${name}-${getRandomDigits()}`);
 
-  // еррорс тільки коли айтемс touched
+  // errors if items touched
   const [touched, setTouched] = useState(false);
   const hasError = touched && required && !value;
 
